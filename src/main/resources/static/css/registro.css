@@ -1,0 +1,35 @@
+contenedor {
+    width: 30px;
+    vertical-align: middle;
+}
+
+.form-control {
+    display: block;
+    width: 70%;
+}
+
+.imagen-form-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.imagen-form-wrapper .contenedor {
+  margin-left: auto; 
+}
+
+.imagen-form-wrapper .contenedor img {
+  margin-top: 50px;
+  margin-right: 100px;
+  width: auto;
+  height: auto;
+  max-height: 600px;
+}
+
+.imagen-form-wrapper .container {
+  width: auto;
+  max-height: 70%;
+  margin-left: auto; 
+}
+
+
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="~{layout/plantilla :: head}">
+
+    </head>
+    <title>Registro</title>
+
+    <link th:href="@{/css/registro.css}" rel="stylesheet" type="text/css"/>
+    <body>
+        <header th:replace="layout/plantilla :: header"></header>
+
+        <div class="imagen-form-wrapper">
+
+            <section class="container mt-5">
+                <h1 class="mb-4">Registro</h1>
+                <form>
+
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="apellidos" class="form-label">Apellidos:</label>
+                        <input type="text" class="form-control" id="apellidos" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="direccion" class="form-label">Dirección:</label>
+                        <input type="text" class="form-control" id="direccion" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo electrónico:</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Contraseña:</label>
+                        <input type="password" class="form-control" id="password" required>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="acepto-privacidad" required>
+                            <label class="form-check-label" for="acepto-privacidad">
+                                Acepto los terminos y condiciones
+                            </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Registrarse</button>
+                </form>
+
+
+            </section>
+            <div class="contenedor">
+                <img src="https://img.freepik.com/foto-gratis/perro-sonriente-adoptar-me-banner_23-2148699702.jpg?w=740&t=st=1709656454~exp=1709657054~hmac=8e4b2bc10ba83efe1276f3bb2ba8cfc51c9a431d64c1b9d47939e1b8bb6d9709" class ="imagen" alt="adoptame"/>  
+            </div>
+        </div>
+
+        <footer th:replace="layout/plantilla :: footer"></footer>
+
+    </body>
+</html>
+
