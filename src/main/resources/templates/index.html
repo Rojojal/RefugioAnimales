@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="layout/plantilla :: head">
+        <link th:href="@{/css/pantallaPrincipal.css}" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <a name="arriba"></a>
+        <header th:replace="layout/plantilla :: header"></header>
+        
+        <div class="contenedor1">
+            <section class="sec1">
+                <h1>¡Adopta a tu nuevo mejor amigo hoy!</h1>
+                <p>Tenemos muchos amigos peludos en busca de un nuevo hogar.</p>
+                <button type="button" class="btn custom-btn-color">¡Adoptar!</button>
+            </section>
+            <section class="sec2">
+                <img src="https://images.pexels.com/photos/7210356/pexels-photo-7210356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Perro index" style="height: 600px"/>
+            </section>
+        </div>
+        
+        <div class="contenedor2">
+            <section>
+                    <p>Nuestra misión es ayudar animalitos a encontrar familias responsables.</p>
+            </section>
+        </div>    
+        
+        <div class="contenedor2">
+            <section class="sec1">
+                <img src="https://img.freepik.com/free-photo/man-spending-time-with-his-dog-garden_23-2149392601.jpg?w=1380&t=st=1709611710~exp=1709612310~hmac=db4197268bdde8bf5bf066164232c9f22ccabed8e21ee0bc0729dc3b99980a3e" alt="Perro y duenno" style="height: 300px"/>
+            </section>
+            <section class="sec1">
+                <img src="https://img.freepik.com/free-photo/woman-growing-plants-home-holding-cat_23-2148928467.jpg?w=1380&t=st=1709611580~exp=1709612180~hmac=9710672afdb9964bf30a568ff9b5cf4dc91cbf4c703311a977535e206b1e6e0d" alt="Gato y duenno 3" style="height: 300px"/>
+            </section>
+            <section class="sec1">
+                <img src="https://img.freepik.com/free-photo/adorable-dog-park-nature-with-owner_23-2150407415.jpg?t=st=1709611407~exp=1709615007~hmac=dc56f7b9d25771bf7173d34cbe8deef5ed805708aa49ee1ddf9b2f6cd9b3cd7f&w=1380" alt="Perro y duenno 2" style="height: 300px"/>
+            </section>
+        </div>
+
+        <div class="text-center mb-3">
+            <p style="font-family: sans-serif; color: black; font-size: 26px">¿No encuentras algo? Busca en la página.</p>
+        </div>
+        
+        <div class="input-group rounded mx-auto mb-4" style="max-width: 400px;">
+            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon"/>
+            <span class="input-group-text border-0" id="search-addon">
+                <i class="fas fa-search"></i>
+            </span>
+        </div>
+        
+        <div class="contenedor1">
+            <section class="sec2">
+                <img src="https://img.freepik.com/free-photo/smiley-woman-playing-shelter-with-dog-waiting-be-adopted_23-2148682992.jpg?t=st=1709613181~exp=1709616781~hmac=d88f9af88b277e189b6d2c6d426c2011005c1ac0ed1378936fa5814c90bd2d0b&w=996" alt="perro" style="height: 600px"/>
+            </section>
+            <section class="sec1">
+                <p style="font-family: serif; font-size: 26px">Testimonio de Valeria y Chiky<p>
+                <p>¡Hola! Mi nombre es Valeria y quiero compartir mi experiencia increíble adoptando a Chiki a través de la página web de adopción de mascotas Patitas Felices. Desde el momento en que vi su tierna carita en la pantalla, supe que estábamos destinados a ser compañeros para siempre. El proceso de adopción fue suave y transparente, con el equipo de Patitas Felices guiándome en cada paso del camino. Ahora, Chiki y yo somos inseparables. Su amor incondicional y alegría contagiosa iluminan mis días, y no puedo imaginar mi vida sin él. Estoy eternamente agradecida a Patitas Felices por traer a este peludo ángel a mi vida.</p>
+            </section>
+        </div>
+        
+        <section style="text-align: center">
+            <a href="#arriba">Ir arriba</a>
+        </section>
+        <footer th:replace="layout/plantilla :: footer"></footer>
+    </body>
+</html>
